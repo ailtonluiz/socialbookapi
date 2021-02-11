@@ -22,7 +22,7 @@ public class Livro {
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private String editora;
-    
+
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private String resumo;
 
