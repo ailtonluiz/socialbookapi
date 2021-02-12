@@ -35,8 +35,11 @@ public class Livro {
     @OneToMany(mappedBy = "livro")
     private List<Comentario> comentarios;
 
+
+    @ManyToOne
+    @JoinColumn(name = "AUTOR_ID")
     @JsonInclude(Include.NON_NULL)
-    private String autor;
+    private Autor autor;
 
     public Livro() {
     }
