@@ -1,4 +1,4 @@
-package com.algaworks.socialbook.com.algaworks.socialbook.domain;
+package com.algaworks.socialbook.domain;
 
 import lombok.Getter;
 import lombok.Setter;

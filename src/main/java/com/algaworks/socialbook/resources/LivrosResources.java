@@ -1,6 +1,6 @@
-package com.algaworks.socialbook.com.algaworks.socialbook.resources;
+package com.algaworks.socialbook.resources;
 
-import com.algaworks.socialbook.com.algaworks.socialbook.domain.Livro;
+import com.algaworks.socialbook.domain.Livro;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
