@@ -32,7 +32,7 @@ public class Livro {
     private String resumo;
 
     @JsonInclude(Include.NON_NULL)
-    @Transient
+    @OneToMany(mappedBy = "livro")
     private List<Comentario> comentarios;
 
     @JsonInclude(Include.NON_NULL)
