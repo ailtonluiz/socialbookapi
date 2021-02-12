@@ -5,14 +5,18 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
 
 @Getter
 @Setter
+@Entity
 public class Livro {
 
     @JsonInclude(Include.NON_NULL)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @JsonInclude(Include.NON_NULL)
@@ -28,6 +32,7 @@ public class Livro {
     private String resumo;
 
     @JsonInclude(Include.NON_NULL)
+    @Transient
     private List<Comentario> comentarios;
 
     @JsonInclude(Include.NON_NULL)
